@@ -52,14 +52,12 @@ body{
     margin-bottom: 25px;
 }
 main .number{
-    
     color: var(--corbranca);
     font-family: var(--fontinter);
     font-weight: 700;
     font-size: 1.3rem;
 }
 main .infonumbers{
-    
     color: var(--brancotransparente2);
     font-family: var(--fontlexend);
     font-size: 0.8rem;
@@ -71,7 +69,6 @@ main .infonumbers{
     max-width: 350px;
 }
 .img{
-   
     background: linear-gradient(rgba(94, 6, 102, 0.801), rgba(94, 6, 102, 0.801)), url('images/image-header-desktop.jpg');
     opacity: 1;
     background-repeat: no-repeat;
@@ -81,5 +78,58 @@ main .infonumbers{
     height: 380px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+@media (max-width:630px) {
+    body{
+        margin:  auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--azulbg);
+        min-height: 100vh;
+    }
+    .content{
+        background-color: var(--azulcard);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        border-radius: 15px;
+    }
+    .maininfo h1{
+        color: var(--corbranca);
+        font-family: var(--fontlexend);
+        font-weight: 700;
+        font-size: 2rem;
+        max-width: 330px;
+        text-align: center;
+        margin: 25px auto;
+    }
+    .maininfo .mainp{
+        color: var(--brancotransparente2);
+        font-family: var(--fontinter);
+        max-width: 280px;
+        margin: 25px auto;
+        text-align: center;
+    }
+    .subinfo{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 25px auto;
+    }
+    .img{
+        margin: auto;
+        background: linear-gradient(rgba(94, 6, 102, 0.801), rgba(94, 6, 102, 0.801)), url('images/image-header-mobile.jpg');
+        opacity: 1;
+        background-position: center center no-repeat ;
+        background-size: cover;
+        max-width: 390px;
+        max-height: 240px;
+        border-radius: 15px 15px 0 0;
+    }
 }
 
